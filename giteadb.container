@@ -8,11 +8,11 @@ Image=yobasystems/alpine-mariadb:latest
 Label=io.containers.autoupdate=registry
 
 # Use volume and network defined below
-Volume=giteadb:/var/lib/mysql
-Network=gitea.network
+#Volume=giteadb:/var/lib/mysql
+#Network=gitea.network
 
 #reference envfile for secrets
-EnvironmentFile=/var/home/core/server/gitea/envfile
+#EnvironmentFile=/var/home/core/server/gitea/envfile
 
 [Service]
 # Restart service when sleep finishes
