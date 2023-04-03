@@ -1,0 +1,28 @@
+[Unit]
+Description=Gitea container
+After=giteadb.service
+
+[Container]
+Image=docker.io/gitea/gitea:latest
+
+#flag for autoupdates
+Label=io.containers.autoupdate=registry
+
+# Use volume and network defined below
+Volume=gitea:/data
+Network=gitea.network
+
+#Ports
+PublishPort=3000:3000
+PublishPort=2222:22
+
+#reference envfile for secrets
+EnvironmentFile=/var/home/core/server/gitea/envfile-gitea
+
+[Service]
+# Restart service when sleep finishes
+Restart=always
+
+[Install]
+# Start by default on boot
+WantedBy=multi-user.target default.target
