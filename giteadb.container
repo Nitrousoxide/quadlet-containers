@@ -1,0 +1,23 @@
+[Unit]
+Description=GiteaDB container
+
+[Container]
+Image=docker.io/yobasystems/alpine-mariadb:latest
+
+#flag for autoupdates
+Label=io.containers.autoupdate=registry
+
+# Use volume and network defined below
+Volume=giteadb:/var/lib/mysql
+Network=gitea.network
+
+#reference envfile for secrets
+EnvironmentFile=/var/home/core/server/gitea/envfile
+
+[Service]
+# Restart service when sleep finishes
+Restart=always
+
+[Install]
+# Start by default on boot
+WantedBy=multi-user.target default.target
