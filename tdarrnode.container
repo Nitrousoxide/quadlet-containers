@@ -2,7 +2,7 @@
 Description=Tdarr-node container
 
 [Container]
-Image=ghcr.io/haveagitgat/tdarr_node:2.00.19
+Image=ghcr.io/haveagitgat/tdarr_node:latest
 
 #Flag for autoupdates
 Label=io.containers.autoupdate=registry
