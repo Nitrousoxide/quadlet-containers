@@ -26,4 +26,4 @@ Environment=serverIP=192.168.7.233
 Environment=serverPort=8266
 
 [Service]
-Restart=unless-stopped
+Restart=always
