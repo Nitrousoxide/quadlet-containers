@@ -1,0 +1,33 @@
+[Unit]
+Description=Tdarr-node container
+
+[Container]
+Image=ghcr.io/haveagitgat/tdarr_node:latest
+
+#Flag for autoupdates
+Label=io.containers.autoupdate=registry
+
+# Use volume and network defined below
+Volume=tdarr_temp:/temp
+Volume=/media/Media:/media
+
+#Ports
+PublishPort=8268:8268
+
+#Environment variables
+Environment=TZ=America/New_York
+Environment=PUID=0
+Environment=PGID=0
+Environment=UMASK_SET=002
+Environment=nodeID=coreos_node
+Environment=nodeIP=192.168.7.77
+Environment=nodePort=8268
+Environment=serverIP=192.168.7.233
+Environment=serverPort=8266
+
+[Service]
+Restart=always
+
+[Install]
+# Start by default on boot
+WantedBy=multi-user.target default.target

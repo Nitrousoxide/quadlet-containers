@@ -1,0 +1,24 @@
+[Unit]
+Description=Homer container
+
+[Container]
+Image=docker.io/b4bz/homer
+
+#Flag for autoupdates
+Label=io.containers.autoupdate=registry
+
+# Use volume and network defined below
+Volume=homer:/www/assets
+
+#Ports
+PublishPort=8849:8080
+
+#Environment variables
+Environment=INIT_ASSETS=0
+
+[Service]
+Restart=unless-stopped
+
+[Install]
+# Start by default on boot
+WantedBy=multi-user.target default.target

@@ -20,7 +20,6 @@ PublishPort=2222:22
 EnvironmentFile=/var/home/core/server/gitea/envfile-gitea
 
 [Service]
-# Restart service when sleep finishes
 Restart=always
 
 [Install]
