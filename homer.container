@@ -9,6 +9,7 @@ Label=io.containers.autoupdate=registry
 
 # Use volume and network defined below
 Volume=homer.volume:/www/assets
+Network=pasta
 
 #Ports
 PublishPort=8849:8080
