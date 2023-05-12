@@ -11,7 +11,7 @@ Label=io.containers.autoupdate=registry
 
 # Use volume and network defined below
 Volume=gitea.volume:/data
-Network=pasta:-t,auto,-u,auto,-T,auto,-U,auto
+Network=pasta
 
 #Ports
 PublishPort=3000:3000
