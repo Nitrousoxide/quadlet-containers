@@ -1,1 +1,1 @@
-put these rootless files in: /home/$USER/.config/containers/systemd
+put these rootless files in: $HOME/.config/containers/systemd
