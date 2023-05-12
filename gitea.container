@@ -10,7 +10,7 @@ Image=docker.io/gitea/gitea:latest
 Label=io.containers.autoupdate=registry
 
 # Use volume and network defined below
-Volume=gitea:/data
+Volume=gitea.volume:/data
 Network=gitea.network
 
 #Ports

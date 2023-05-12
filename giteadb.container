@@ -8,7 +8,7 @@ Image=docker.io/yobasystems/alpine-mariadb:latest
 Label=io.containers.autoupdate=registry
 
 # Use volume and network defined below
-Volume=giteadb:/var/lib/mysql
+Volume=giteadb.volume:/var/lib/mysql
 Network=gitea.network
 
 #reference envfile for secrets
