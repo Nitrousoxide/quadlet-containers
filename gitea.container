@@ -1,7 +1,7 @@
 [Unit]
 Description=Gitea container
 After=giteadb.service
-Requires:giteadb.service
+Requires=giteadb.service
 
 [Container]
 Image=docker.io/gitea/gitea:latest
