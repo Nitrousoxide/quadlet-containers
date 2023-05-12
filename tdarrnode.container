@@ -8,7 +8,7 @@ Image=ghcr.io/haveagitgat/tdarr_node:latest
 Label=io.containers.autoupdate=registry
 
 # Use volume and network defined below
-Volume=tdarr_temp:/temp
+Volume=tdarr_temp.volume:/temp
 Volume=/media/Media:/media
 
 #Ports
