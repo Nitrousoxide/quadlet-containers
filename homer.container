@@ -8,7 +8,7 @@ Image=docker.io/b4bz/homer
 Label=io.containers.autoupdate=registry
 
 # Use volume and network defined below
-Volume=homer:/www/assets
+Volume=homer.volume:/www/assets
 
 #Ports
 PublishPort=8849:8080
