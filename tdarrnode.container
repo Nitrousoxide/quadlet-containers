@@ -1,5 +1,6 @@
 [Unit]
 Description=Tdarr-node container
+RequiresMountsFor=/media/Media/
 
 [Container]
 Image=ghcr.io/haveagitgat/tdarr_node:latest
