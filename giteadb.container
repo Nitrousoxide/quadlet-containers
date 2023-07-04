@@ -5,7 +5,7 @@ Description=GiteaDB container
 Image=docker.io/yobasystems/alpine-mariadb:latest
 
 #flag for autoupdates
-AutoUpdate=registry
+Label=io.containers.autoupdate=registry
 
 # Use volume and network defined below
 Volume=giteadb:/var/lib/mysql
