@@ -7,7 +7,7 @@ Requires=giteadb.service
 Image=docker.io/gitea/gitea:latest
 
 #flag for autoupdates
-AutoUpdate=registry
+Label=io.containers.autoupdate=registry
 
 # Use volume and network defined below
 Volume=gitea:/data
