@@ -5,7 +5,7 @@ Description=Homer container
 Image=docker.io/b4bz/homer
 
 #Flag for autoupdates
-Label=io.containers.autoupdate=registry
+AutoUpdate=registry
 
 # Use volume and network defined below
 Volume=homer:/www/assets

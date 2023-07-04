@@ -6,7 +6,7 @@ RequiresMountsFor=/media/Media/
 Image=ghcr.io/haveagitgat/tdarr_node:latest
 
 #Flag for autoupdates
-Label=io.containers.autoupdate=registry
+AutoUpdate=registry
 
 # Use volume and network defined below
 Volume=tdarr_temp:/temp
