@@ -1,5 +1,6 @@
 [Unit]
 Description=GiteaDB container
+Wants=gitea.service
 
 [Container]
 Image=docker.io/yobasystems/alpine-mariadb:latest
